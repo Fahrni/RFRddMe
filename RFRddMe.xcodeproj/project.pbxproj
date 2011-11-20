@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D448E1951478544F00590A60 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1941478544F00590A60 /* Cocoa.framework */; };
+		D448E19F1478544F00590A60 /* RFRddMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E19E1478544F00590A60 /* RFRddMe.m */; };
+		D448E1A71478544F00590A60 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1A61478544F00590A60 /* SenTestingKit.framework */; };
+		D448E1A81478544F00590A60 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1941478544F00590A60 /* Cocoa.framework */; };
+		D448E1AB1478544F00590A60 /* libRFRddMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1911478544F00590A60 /* libRFRddMe.a */; };
+		D448E1B11478544F00590A60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D448E1AF1478544F00590A60 /* InfoPlist.strings */; };
+		D448E1B41478544F00590A60 /* RFRddMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1B31478544F00590A60 /* RFRddMeTests.m */; };
+		D448E1BE147854DB00590A60 /* RFRddMeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1BD147854DB00590A60 /* RFRddMeProtocol.h */; };
+		D448E1C11478564400590A60 /* RFRddMeError.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1BF1478564400590A60 /* RFRddMeError.h */; };
+		D448E1C21478564400590A60 /* RFRddMeError.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1C01478564400590A60 /* RFRddMeError.m */; };
+		D448E1C51478565A00590A60 /* RFRddMeShortUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1C31478565A00590A60 /* RFRddMeShortUrl.h */; };
+		D448E1C61478565A00590A60 /* RFRddMeShortUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1C41478565A00590A60 /* RFRddMeShortUrl.m */; };
+		D448E1C91478573300590A60 /* RFRddMeExpandedUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1C71478573300590A60 /* RFRddMeExpandedUrl.h */; };
+		D448E1CA1478573300590A60 /* RFRddMeExpandedUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1C81478573300590A60 /* RFRddMeExpandedUrl.m */; };
+		D448E1E314785A3300590A60 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1CF14785A3300590A60 /* ASICacheDelegate.h */; };
+		D448E1E414785A3300590A60 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1D014785A3300590A60 /* ASIDataCompressor.h */; };
+		D448E1E514785A3300590A60 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1D114785A3300590A60 /* ASIDataCompressor.m */; };
+		D448E1E614785A3300590A60 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1D214785A3300590A60 /* ASIDataDecompressor.h */; };
+		D448E1E714785A3300590A60 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1D314785A3300590A60 /* ASIDataDecompressor.m */; };
+		D448E1E814785A3300590A60 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1D414785A3300590A60 /* ASIDownloadCache.h */; };
+		D448E1E914785A3300590A60 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1D514785A3300590A60 /* ASIDownloadCache.m */; };
+		D448E1EA14785A3300590A60 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1D614785A3300590A60 /* ASIFormDataRequest.h */; };
+		D448E1EB14785A3300590A60 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1D714785A3300590A60 /* ASIFormDataRequest.m */; };
+		D448E1EC14785A3300590A60 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1D814785A3300590A60 /* ASIHTTPRequest.h */; };
+		D448E1ED14785A3300590A60 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1D914785A3300590A60 /* ASIHTTPRequest.m */; };
+		D448E1EE14785A3300590A60 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1DA14785A3300590A60 /* ASIHTTPRequestConfig.h */; };
+		D448E1EF14785A3300590A60 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1DB14785A3300590A60 /* ASIHTTPRequestDelegate.h */; };
+		D448E1F014785A3300590A60 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1DC14785A3300590A60 /* ASIInputStream.h */; };
+		D448E1F114785A3300590A60 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1DD14785A3300590A60 /* ASIInputStream.m */; };
+		D448E1F214785A3300590A60 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1DE14785A3300590A60 /* ASINetworkQueue.h */; };
+		D448E1F314785A3300590A60 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1DF14785A3300590A60 /* ASINetworkQueue.m */; };
+		D448E1F414785A3300590A60 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1E014785A3300590A60 /* ASIProgressDelegate.h */; };
+		D448E1F714785ACD00590A60 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1F614785ACD00590A60 /* SystemConfiguration.framework */; };
+		D448E1F914785AE100590A60 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1F814785AE100590A60 /* libz.dylib */; };
+		D448E1FD14785B5000590A60 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1FB14785B5000590A60 /* JSONKit.h */; };
+		D448E1FE14785B5000590A60 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E1FC14785B5000590A60 /* JSONKit.m */; };
+		D448E201147861AF00590A60 /* RFRddMeProtocolImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D448E1FF147861AF00590A60 /* RFRddMeProtocolImpl.h */; };
+		D448E202147861AF00590A60 /* RFRddMeProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D448E200147861AF00590A60 /* RFRddMeProtocolImpl.m */; };
+		D448E203147865EE00590A60 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1F614785ACD00590A60 /* SystemConfiguration.framework */; };
+		D448E204147865F800590A60 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D448E1F814785AE100590A60 /* libz.dylib */; };
+		D49C69FD147887EA00AFEFF1 /* RFRddMeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D49C69FB147887EA00AFEFF1 /* RFRddMeConstants.h */; };
+		D49C69FE147887EA00AFEFF1 /* RFRddMeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C69FC147887EA00AFEFF1 /* RFRddMeConstants.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D448E1A91478544F00590A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D448E1881478544E00590A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D448E1901478544F00590A60;
+			remoteInfo = RFRddMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D448E1911478544F00590A60 /* libRFRddMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRFRddMe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D448E1941478544F00590A60 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D448E1971478544F00590A60 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D448E1981478544F00590A60 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D448E1991478544F00590A60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D448E19C1478544F00590A60 /* RFRddMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFRddMe-Prefix.pch"; sourceTree = "<group>"; };
+		D448E19D1478544F00590A60 /* RFRddMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFRddMe.h; sourceTree = "<group>"; };
+		D448E19E1478544F00590A60 /* RFRddMe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRddMe.m; sourceTree = "<group>"; };
+		D448E1A51478544F00590A60 /* RFRddMeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFRddMeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D448E1A61478544F00590A60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D448E1AE1478544F00590A60 /* RFRddMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFRddMeTests-Info.plist"; sourceTree = "<group>"; };
+		D448E1B01478544F00590A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D448E1B21478544F00590A60 /* RFRddMeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFRddMeTests.h; sourceTree = "<group>"; };
+		D448E1B31478544F00590A60 /* RFRddMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRddMeTests.m; sourceTree = "<group>"; };
+		D448E1BD147854DB00590A60 /* RFRddMeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeProtocol.h; sourceTree = "<group>"; };
+		D448E1BF1478564400590A60 /* RFRddMeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeError.h; sourceTree = "<group>"; };
+		D448E1C01478564400590A60 /* RFRddMeError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeError.m; sourceTree = "<group>"; };
+		D448E1C31478565A00590A60 /* RFRddMeShortUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeShortUrl.h; sourceTree = "<group>"; };
+		D448E1C41478565A00590A60 /* RFRddMeShortUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeShortUrl.m; sourceTree = "<group>"; };
+		D448E1C71478573300590A60 /* RFRddMeExpandedUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeExpandedUrl.h; sourceTree = "<group>"; };
+		D448E1C81478573300590A60 /* RFRddMeExpandedUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeExpandedUrl.m; sourceTree = "<group>"; };
+		D448E1CF14785A3300590A60 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = External/ASIHTTPRequest/Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		D448E1D014785A3300590A60 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = External/ASIHTTPRequest/Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		D448E1D114785A3300590A60 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = External/ASIHTTPRequest/Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		D448E1D214785A3300590A60 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = External/ASIHTTPRequest/Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		D448E1D314785A3300590A60 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = External/ASIHTTPRequest/Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		D448E1D414785A3300590A60 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = External/ASIHTTPRequest/Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		D448E1D514785A3300590A60 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = External/ASIHTTPRequest/Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		D448E1D614785A3300590A60 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = External/ASIHTTPRequest/Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		D448E1D714785A3300590A60 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = External/ASIHTTPRequest/Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		D448E1D814785A3300590A60 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = External/ASIHTTPRequest/Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		D448E1D914785A3300590A60 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = External/ASIHTTPRequest/Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		D448E1DA14785A3300590A60 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = External/ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		D448E1DB14785A3300590A60 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = External/ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		D448E1DC14785A3300590A60 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = External/ASIHTTPRequest/Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		D448E1DD14785A3300590A60 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = External/ASIHTTPRequest/Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		D448E1DE14785A3300590A60 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = External/ASIHTTPRequest/Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		D448E1DF14785A3300590A60 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = External/ASIHTTPRequest/Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		D448E1E014785A3300590A60 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = External/ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		D448E1F614785ACD00590A60 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D448E1F814785AE100590A60 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D448E1FB14785B5000590A60 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = External/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		D448E1FC14785B5000590A60 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = External/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		D448E1FF147861AF00590A60 /* RFRddMeProtocolImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeProtocolImpl.h; sourceTree = "<group>"; };
+		D448E200147861AF00590A60 /* RFRddMeProtocolImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeProtocolImpl.m; sourceTree = "<group>"; };
+		D49C69FB147887EA00AFEFF1 /* RFRddMeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeConstants.h; sourceTree = "<group>"; };
+		D49C69FC147887EA00AFEFF1 /* RFRddMeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeConstants.m; sourceTree = "<group>"; };
+		D4F212731478C85F0006F3A9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D448E18E1478544F00590A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E1F914785AE100590A60 /* libz.dylib in Frameworks */,
+				D448E1F714785ACD00590A60 /* SystemConfiguration.framework in Frameworks */,
+				D448E1951478544F00590A60 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D448E1A11478544F00590A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E204147865F800590A60 /* libz.dylib in Frameworks */,
+				D448E203147865EE00590A60 /* SystemConfiguration.framework in Frameworks */,
+				D448E1A71478544F00590A60 /* SenTestingKit.framework in Frameworks */,
+				D448E1A81478544F00590A60 /* Cocoa.framework in Frameworks */,
+				D448E1AB1478544F00590A60 /* libRFRddMe.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D448E1861478544E00590A60 = {
+			isa = PBXGroup;
+			children = (
+				D4F212731478C85F0006F3A9 /* README.markdown */,
+				D448E19A1478544F00590A60 /* RFRddMe */,
+				D448E1CB14785A0700590A60 /* External */,
+				D448E19B1478544F00590A60 /* Supporting Files */,
+				D448E1AC1478544F00590A60 /* RFRddMeTests */,
+				D448E1931478544F00590A60 /* Frameworks */,
+				D448E1921478544F00590A60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D448E1921478544F00590A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1911478544F00590A60 /* libRFRddMe.a */,
+				D448E1A51478544F00590A60 /* RFRddMeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D448E1931478544F00590A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1F814785AE100590A60 /* libz.dylib */,
+				D448E1F614785ACD00590A60 /* SystemConfiguration.framework */,
+				D448E1941478544F00590A60 /* Cocoa.framework */,
+				D448E1A61478544F00590A60 /* SenTestingKit.framework */,
+				D448E1961478544F00590A60 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D448E1961478544F00590A60 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1971478544F00590A60 /* AppKit.framework */,
+				D448E1981478544F00590A60 /* CoreData.framework */,
+				D448E1991478544F00590A60 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D448E19A1478544F00590A60 /* RFRddMe */ = {
+			isa = PBXGroup;
+			children = (
+				D448E19D1478544F00590A60 /* RFRddMe.h */,
+				D448E19E1478544F00590A60 /* RFRddMe.m */,
+				D448E1BD147854DB00590A60 /* RFRddMeProtocol.h */,
+				D448E1BF1478564400590A60 /* RFRddMeError.h */,
+				D448E1C01478564400590A60 /* RFRddMeError.m */,
+				D448E1C31478565A00590A60 /* RFRddMeShortUrl.h */,
+				D448E1C41478565A00590A60 /* RFRddMeShortUrl.m */,
+				D448E1C71478573300590A60 /* RFRddMeExpandedUrl.h */,
+				D448E1C81478573300590A60 /* RFRddMeExpandedUrl.m */,
+				D49C69FB147887EA00AFEFF1 /* RFRddMeConstants.h */,
+				D49C69FC147887EA00AFEFF1 /* RFRddMeConstants.m */,
+			);
+			path = RFRddMe;
+			sourceTree = "<group>";
+		};
+		D448E19B1478544F00590A60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D448E19C1478544F00590A60 /* RFRddMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = RFRddMe;
+			sourceTree = "<group>";
+		};
+		D448E1AC1478544F00590A60 /* RFRddMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1B21478544F00590A60 /* RFRddMeTests.h */,
+				D448E1B31478544F00590A60 /* RFRddMeTests.m */,
+				D448E1FF147861AF00590A60 /* RFRddMeProtocolImpl.h */,
+				D448E200147861AF00590A60 /* RFRddMeProtocolImpl.m */,
+				D448E1AD1478544F00590A60 /* Supporting Files */,
+			);
+			path = RFRddMeTests;
+			sourceTree = "<group>";
+		};
+		D448E1AD1478544F00590A60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1AE1478544F00590A60 /* RFRddMeTests-Info.plist */,
+				D448E1AF1478544F00590A60 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D448E1CB14785A0700590A60 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1FA14785B3900590A60 /* JSONKit */,
+				D448E1CC14785A1400590A60 /* ASIHttp */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		D448E1CC14785A1400590A60 /* ASIHttp */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1CF14785A3300590A60 /* ASICacheDelegate.h */,
+				D448E1D014785A3300590A60 /* ASIDataCompressor.h */,
+				D448E1D114785A3300590A60 /* ASIDataCompressor.m */,
+				D448E1D214785A3300590A60 /* ASIDataDecompressor.h */,
+				D448E1D314785A3300590A60 /* ASIDataDecompressor.m */,
+				D448E1D414785A3300590A60 /* ASIDownloadCache.h */,
+				D448E1D514785A3300590A60 /* ASIDownloadCache.m */,
+				D448E1D614785A3300590A60 /* ASIFormDataRequest.h */,
+				D448E1D714785A3300590A60 /* ASIFormDataRequest.m */,
+				D448E1D814785A3300590A60 /* ASIHTTPRequest.h */,
+				D448E1D914785A3300590A60 /* ASIHTTPRequest.m */,
+				D448E1DA14785A3300590A60 /* ASIHTTPRequestConfig.h */,
+				D448E1DB14785A3300590A60 /* ASIHTTPRequestDelegate.h */,
+				D448E1DC14785A3300590A60 /* ASIInputStream.h */,
+				D448E1DD14785A3300590A60 /* ASIInputStream.m */,
+				D448E1DE14785A3300590A60 /* ASINetworkQueue.h */,
+				D448E1DF14785A3300590A60 /* ASINetworkQueue.m */,
+				D448E1E014785A3300590A60 /* ASIProgressDelegate.h */,
+			);
+			name = ASIHttp;
+			sourceTree = "<group>";
+		};
+		D448E1FA14785B3900590A60 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				D448E1FB14785B5000590A60 /* JSONKit.h */,
+				D448E1FC14785B5000590A60 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D448E18F1478544F00590A60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E1BE147854DB00590A60 /* RFRddMeProtocol.h in Headers */,
+				D448E1C11478564400590A60 /* RFRddMeError.h in Headers */,
+				D448E1C51478565A00590A60 /* RFRddMeShortUrl.h in Headers */,
+				D448E1C91478573300590A60 /* RFRddMeExpandedUrl.h in Headers */,
+				D448E1E314785A3300590A60 /* ASICacheDelegate.h in Headers */,
+				D448E1E414785A3300590A60 /* ASIDataCompressor.h in Headers */,
+				D448E1E614785A3300590A60 /* ASIDataDecompressor.h in Headers */,
+				D448E1E814785A3300590A60 /* ASIDownloadCache.h in Headers */,
+				D448E1EA14785A3300590A60 /* ASIFormDataRequest.h in Headers */,
+				D448E1EC14785A3300590A60 /* ASIHTTPRequest.h in Headers */,
+				D448E1EE14785A3300590A60 /* ASIHTTPRequestConfig.h in Headers */,
+				D448E1EF14785A3300590A60 /* ASIHTTPRequestDelegate.h in Headers */,
+				D448E1F014785A3300590A60 /* ASIInputStream.h in Headers */,
+				D448E1F214785A3300590A60 /* ASINetworkQueue.h in Headers */,
+				D448E1F414785A3300590A60 /* ASIProgressDelegate.h in Headers */,
+				D448E1FD14785B5000590A60 /* JSONKit.h in Headers */,
+				D448E201147861AF00590A60 /* RFRddMeProtocolImpl.h in Headers */,
+				D49C69FD147887EA00AFEFF1 /* RFRddMeConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D448E1901478544F00590A60 /* RFRddMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D448E1B71478544F00590A60 /* Build configuration list for PBXNativeTarget "RFRddMe" */;
+			buildPhases = (
+				D448E18D1478544F00590A60 /* Sources */,
+				D448E18E1478544F00590A60 /* Frameworks */,
+				D448E18F1478544F00590A60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFRddMe;
+			productName = RFRddMe;
+			productReference = D448E1911478544F00590A60 /* libRFRddMe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D448E1A41478544F00590A60 /* RFRddMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D448E1BA1478544F00590A60 /* Build configuration list for PBXNativeTarget "RFRddMeTests" */;
+			buildPhases = (
+				D448E1A01478544F00590A60 /* Sources */,
+				D448E1A11478544F00590A60 /* Frameworks */,
+				D448E1A21478544F00590A60 /* Resources */,
+				D448E1A31478544F00590A60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D448E1AA1478544F00590A60 /* PBXTargetDependency */,
+			);
+			name = RFRddMeTests;
+			productName = RFRddMeTests;
+			productReference = D448E1A51478544F00590A60 /* RFRddMeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D448E1881478544E00590A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D448E18B1478544E00590A60 /* Build configuration list for PBXProject "RFRddMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = D448E1861478544E00590A60;
+			productRefGroup = D448E1921478544F00590A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D448E1901478544F00590A60 /* RFRddMe */,
+				D448E1A41478544F00590A60 /* RFRddMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D448E1A21478544F00590A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E1B11478544F00590A60 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D448E1A31478544F00590A60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D448E18D1478544F00590A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E19F1478544F00590A60 /* RFRddMe.m in Sources */,
+				D448E1C21478564400590A60 /* RFRddMeError.m in Sources */,
+				D448E1C61478565A00590A60 /* RFRddMeShortUrl.m in Sources */,
+				D448E1CA1478573300590A60 /* RFRddMeExpandedUrl.m in Sources */,
+				D448E1E514785A3300590A60 /* ASIDataCompressor.m in Sources */,
+				D448E1E714785A3300590A60 /* ASIDataDecompressor.m in Sources */,
+				D448E1E914785A3300590A60 /* ASIDownloadCache.m in Sources */,
+				D448E1EB14785A3300590A60 /* ASIFormDataRequest.m in Sources */,
+				D448E1ED14785A3300590A60 /* ASIHTTPRequest.m in Sources */,
+				D448E1F114785A3300590A60 /* ASIInputStream.m in Sources */,
+				D448E1F314785A3300590A60 /* ASINetworkQueue.m in Sources */,
+				D448E1FE14785B5000590A60 /* JSONKit.m in Sources */,
+				D448E202147861AF00590A60 /* RFRddMeProtocolImpl.m in Sources */,
+				D49C69FE147887EA00AFEFF1 /* RFRddMeConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D448E1A01478544F00590A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448E1B41478544F00590A60 /* RFRddMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D448E1AA1478544F00590A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D448E1901478544F00590A60 /* RFRddMe */;
+			targetProxy = D448E1A91478544F00590A60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D448E1AF1478544F00590A60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D448E1B01478544F00590A60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D448E1B51478544F00590A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D448E1B61478544F00590A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D448E1B81478544F00590A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFRddMe/RFRddMe-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D448E1B91478544F00590A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFRddMe/RFRddMe-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D448E1BB1478544F00590A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFRddMe/RFRddMe-Prefix.pch";
+				INFOPLIST_FILE = "RFRddMeTests/RFRddMeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D448E1BC1478544F00590A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFRddMe/RFRddMe-Prefix.pch";
+				INFOPLIST_FILE = "RFRddMeTests/RFRddMeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D448E18B1478544E00590A60 /* Build configuration list for PBXProject "RFRddMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D448E1B51478544F00590A60 /* Debug */,
+				D448E1B61478544F00590A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D448E1B71478544F00590A60 /* Build configuration list for PBXNativeTarget "RFRddMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D448E1B81478544F00590A60 /* Debug */,
+				D448E1B91478544F00590A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D448E1BA1478544F00590A60 /* Build configuration list for PBXNativeTarget "RFRddMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D448E1BB1478544F00590A60 /* Debug */,
+				D448E1BC1478544F00590A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D448E1881478544E00590A60 /* Project object */;
+}
