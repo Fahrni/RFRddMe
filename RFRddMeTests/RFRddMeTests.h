@@ -3,7 +3,7 @@
 //  RFRddMeTests
 //
 //  Created by Rob Fahrni on 11/19/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Robert R. Fahrni. All rights reserved.
 //
 //	Redistribution and use in source and binary forms, with or without modification, 
 //	are permitted provided that the following conditions are met:
