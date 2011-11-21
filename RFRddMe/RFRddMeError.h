@@ -31,10 +31,12 @@
 @interface RFRddMeError : 
     NSObject
 {
-    NSInteger _errorCode;
-    NSString* _errorMessage;
+    NSInteger errorCode;
+    NSString* errorMessage;
 }
 
+@property (assign)  NSInteger   errorCode;
+@property (copy)    NSString*   errorMessage;
 
 - (id)initWithDictionary:(NSDictionary*)dictionary;
 - (id)initWithError:(NSError*)error;

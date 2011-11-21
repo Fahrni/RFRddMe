@@ -117,7 +117,6 @@ static NSString* kRddMePOST     = @"POST";
     // Completion Block for a successful call.
     [request setCompletionBlock:
      ^{
-         //NSLog(@"expandUrl ==> %@\n", [request responseString]);
          NSDictionary* response = [self _parseResponseString:[request responseString]];
          if (response &&
              [self _isSuccessResponse:response])

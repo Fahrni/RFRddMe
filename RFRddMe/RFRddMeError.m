@@ -27,14 +27,19 @@
 //	OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 #import "RFRddMeError.h"
+#import "RFRddMeConstants.h"
 
 @implementation RFRddMeError
+
+@synthesize errorCode;
+@synthesize errorMessage;
 
 - (id)initWithDictionary:(NSDictionary*)dictionary;
 {
     if ((self = [super init]))
     {
-        //_errorMessage = [errorString copy];
+        self.errorCode      = [[dictionary valueForKey:kRFRddMeErrorCodeTag] integerValue];
+        self.errorMessage   = [dictionary valueForKey:kRFRddMeErrorMessageTag];
     }
     
     return self;
@@ -44,11 +49,11 @@
 {
     if ((self = [super init]))
     {
-        _errorCode              = [error code];
+        errorCode               = [error code];
         NSString* description   = [error description];
         if (description)
         {
-            _errorMessage = [description copy];
+            errorMessage = [description copy];
         }
     }
     
@@ -57,7 +62,7 @@
 
 - (void)dealloc;
 {
-    [_errorMessage release];
+    [errorMessage release];
     [super dealloc];
 }
 

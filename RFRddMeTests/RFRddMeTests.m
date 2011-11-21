@@ -116,6 +116,8 @@
 - (void)requestFailed:(RFRddMeError*)error;
 {
 //    NSLog(@"===> requestFailed");
+//    NSLog(@"Message: %@\n", error.errorMessage);
+//    NSLog(@"Error Code: %ld\n", error.errorCode);
     
     _succeeded  = NO;
     _done       = YES;

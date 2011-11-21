@@ -42,3 +42,5 @@ extern NSString* const kRFRddMeTrue;
 extern NSString* const kRFRddMeFalse;
 extern NSString* const kRFRddMeMetaTag;
 extern NSString* const kRFRddMeArticleTag;
+extern NSString* const kRFRddMeErrorMessageTag;
+extern NSString* const kRFRddMeErrorCodeTag;

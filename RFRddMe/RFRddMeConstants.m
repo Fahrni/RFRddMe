@@ -42,3 +42,5 @@ NSString* const kRFRddMeTrue            = @"true";
 NSString* const kRFRddMeFalse           = @"false";
 NSString* const kRFRddMeMetaTag         = @"meta";
 NSString* const kRFRddMeArticleTag      = @"article";
+NSString* const kRFRddMeErrorMessageTag = @"message";
+NSString* const kRFRddMeErrorCodeTag    = @"errorCode";
