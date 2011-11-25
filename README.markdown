@@ -24,6 +24,11 @@ Unfortunately there is no sample project, but there are unit tests that execute 
 4. Include RFRddMeShortUrl.h, RFRddMeExpandedUrl.h, and RFRddMeError.h in your implementation of RFRddMeProtocol. 
 5. Write an application that uses the service.
 
+What kind of license are we talking about here?
+-------------------------
+It's a BSD license, enjoy. See the [LICENSE](https://github.com/Fahrni/RFRddMe/blob/master/LICENSE) file for details.
+
+
 Find this useful?
 -------------------------
 
