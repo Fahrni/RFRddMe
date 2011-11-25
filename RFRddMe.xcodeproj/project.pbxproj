@@ -109,6 +109,7 @@
 		D448E200147861AF00590A60 /* RFRddMeProtocolImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeProtocolImpl.m; sourceTree = "<group>"; };
 		D49C69FB147887EA00AFEFF1 /* RFRddMeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRddMeConstants.h; sourceTree = "<group>"; };
 		D49C69FC147887EA00AFEFF1 /* RFRddMeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRddMeConstants.m; sourceTree = "<group>"; };
+		D4A3228C1480167C006B1F04 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D4F212731478C85F0006F3A9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +142,7 @@
 		D448E1861478544E00590A60 = {
 			isa = PBXGroup;
 			children = (
+				D4A3228C1480167C006B1F04 /* LICENSE */,
 				D4F212731478C85F0006F3A9 /* README.markdown */,
 				D448E19A1478544F00590A60 /* RFRddMe */,
 				D448E1CB14785A0700590A60 /* External */,
