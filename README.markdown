@@ -32,7 +32,7 @@ It's a BSD license, enjoy. See the [LICENSE](https://github.com/Fahrni/RFRddMe/b
 Find this useful?
 -------------------------
 
-If you find this useful I'd love to hear from you! Please contact me, rob.fahrni@gmail.com, and let me know how you're using it. I'm also available for iOS work, visit [Apple Core Labs](http://applecorelabs.com).
+If you find this useful I'd love to hear from you! Please contact me, rob@applecorelabs.com, and let me know how you're using it. I'm also available for iOS work, visit [Apple Core Labs](http://applecorelabs.com).
 
 All The Other Stuff
 -------------------------
