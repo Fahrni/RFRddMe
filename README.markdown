@@ -21,7 +21,7 @@ Unfortunately there is no sample project, but there are unit tests that execute 
 1. Create a new Xcode 4 workspace and include RFRddMe. It's not a Framework, just include the source.
 2. Drag RFRddMe.h into your main app's project. This will let you communicate with [rdd.me](http://ww1.readability.com/publishers/rdd).
 3. Implement RFRddMeProtocol. There are only three methods to implement. See RFRddMeProtocol.h for the protocol and RFRddMeTests.h/.m for an implementation.
-4. Include RFRddMeShortUrl.h, RFRddMeExpandedUrl.h, and RFRddMeError.h in your implementation of RFRddMeProtocol. 
+4. Include RFRddMeShortUrl.h, RFRddMeExpandedUrl.h, and RFRddMeError.h in your implementation of RFRddMeProtocol.
 5. Write an application that uses the service.
 
 What kind of license are we talking about here?
