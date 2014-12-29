@@ -1,7 +1,7 @@
 RFRddMe
 =========================
 
-* Created by [Rob Fahrni](http://fahrni.ws)
+* Created by [Rob Fahrni](http://fahrni.me)
 
 What is RFRddMe?
 -------------------------
